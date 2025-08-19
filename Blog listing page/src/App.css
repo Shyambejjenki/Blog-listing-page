@@ -1,0 +1,16 @@
+:root { --bg: #0b1020; --card: #11192e; --muted: #b8c2d9; --brand: #60a5fa; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; color: white; background: linear-gradient(180deg, #0b1020 0%, #0b1020 60%, #0e1630 100%); min-height: 100vh;}
+.container { width: min(1100px, 92%); margin: 0 auto; }
+h1 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin: 24px 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.card { background: linear-gradient(145deg, #0e1731, #0c1329); border: 1px solid rgba(255,255,255,0.06); border-radius: 16px; padding: 14px; box-shadow: 0 8px 24px rgba(0,0,0,0.25); transition: transform .15s ease, box-shadow .15s ease, border-color .2s ease; }
+.card:hover { transform: translateY(-3px); border-color: rgba(96,165,250,.35); box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+.thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; }
+.title { margin: 10px 0 6px; font-size: 1.1rem; }
+.desc { color: var(--muted); font-size: .95rem; line-height: 1.35rem; min-height: 42px;}
+.btn { margin-top: 10px; padding: 9px 12px; border: 1px solid rgba(255,255,255,0.15); background: transparent; color: white; border-radius: 10px; cursor: pointer; }
+.btn:hover { border-color: var(--brand); }
+.details { display: grid; gap: 12px; }
+.back { margin: 0 0 10px; }
+.footer { margin: 30px 0 20px; color: var(--muted); font-size: .9rem; text-align: center; }
